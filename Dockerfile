@@ -11,5 +11,7 @@ RUN pip3 install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install -r requirements.txt
 
+RUN apt-get install -y python3-scipy
+
 CMD python3 app.py
 
